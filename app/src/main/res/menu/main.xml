@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_notification"
+        android:orderInCategory="100"
+        app:actionLayout="@layout/custom_notification_layout"
+        app:showAsAction="always"
+        android:title="TODO" />
+    <item
+        android:id="@+id/action_order_search"
+        android:icon="@drawable/ic_search_black_24dp"
+        android:iconTint="@color/black"
+        app:showAsAction="always"
+        app:actionViewClass="android.widget.SearchView"
+        android:title="TODO" />
+
+    <item
+        android:id="@+id/action_picked"
+        android:orderInCategory="100"
+        app:showAsAction="never"
+        android:title="Picked" />
+    <item
+        android:id="@+id/action_reached"
+        android:orderInCategory="100"
+        app:showAsAction="never"
+        android:title="Reached" />
+    <item
+        android:id="@+id/action_dropped"
+        app:showAsAction="never"
+        android:title="Dropped" />
+
+</menu>

@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    tools:context="com.DeliverExpertRiderApp.ui.fragments.EditProfileFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/edit_img_circle"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:padding="10dp"
+                    android:src="@drawable/ic_faces_black_24dp"
+        />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/grey"
+                    android:text="Tap to edit photo"
+                    android:textSize="12dp" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/input_box_line_corner"
+                    android:paddingTop="10dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginBottom="10dp"
+                    android:textColorHint="@color/grey">
+
+                    <EditText
+                        android:id="@+id/fullname_edit_profile"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/editText15LeftBlack"
+                        android:hint="Full Name"
+                        android:inputType="text"
+                        android:textColor="@color/grey"
+                        android:textColorHint="@color/grey" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/input_box_line_corner"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:textColorHint="@color/grey">
+
+                    <EditText
+                        android:id="@+id/email_edit_profile"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/editText15LeftBlack"
+                        android:hint="Email"
+                        android:inputType="textEmailAddress"
+                        android:textColor="@color/grey"
+                        android:textColorHint="@color/grey" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:background="@drawable/input_box_line_corner"
+                    android:layout_marginBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:textColorHint="@color/grey">
+
+                    <EditText
+                        android:id="@+id/phone_number_edit_profile"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/editText15LeftBlack"
+                        android:hint="Phone Number"
+                        android:inputType="phone"
+                        android:textColor="@color/grey"
+                        android:textColorHint="@color/grey" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:background="@drawable/input_box_line_corner"
+                    android:layout_marginBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:textColorHint="@color/grey">
+
+                    <EditText
+                        android:id="@+id/address_edit_profile"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/editText15LeftBlack"
+                        android:hint="Address"
+                        android:inputType="textMultiLine"
+                        android:lines="3"
+                        android:textColor="@color/grey"
+                        android:textColorHint="@color/grey" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <TextView
+                    android:id="@+id/change_password_edit_profile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="40dp"
+                    android:layout_weight="1"
+                    android:paddingRight="5dp"
+                    android:text="Change Password"
+                    android:textColor="@color/red" />
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/edit_btn_save"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginBottom="20dp"
+                    app:cardBackgroundColor="@color/colorPrimary"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="Save"
+                        android:textColor="@color/white"
+                        android:textSize="16dp" />
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            android:id="@+id/pr"
+            layout="@layout/progress_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="3dp"
+    app:cardElevation="5dp"
+    android:id="@+id/order_confirm_parrent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/order_image_title"
+            android:src="@drawable/ic_faces_black_24dp"
+            android:padding="5dp"
+            android:layout_weight="2.5"
+            android:maxHeight="100dp"
+            android:maxWidth="70dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <LinearLayout
+            android:layout_weight="2"
+            android:padding="5dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/order_title"
+                android:gravity="left|center_vertical"
+                android:layout_weight="1"
+                android:text="Order Title"
+                android:maxLength="150"
+                android:maxWidth="200dp"
+                android:maxLines="3"
+                style="@style/RegularBlack15Center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/order_qty"
+                android:gravity="left|center_vertical"
+                android:layout_weight="1"
+                android:text=" qty "
+                android:paddingBottom="5dp"
+                style="@style/BoldBlack13Center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/cut_price"
+                android:gravity="left|center_vertical"
+                android:layout_weight="1"
+                android:text="cut Price"
+                style="@style/RegularWhite13Center"
+                android:textColor="@color/grey_user_panel_text"
+                android:maxLines="4"
+                android:ems="4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/qr_price"
+            android:gravity="bottom|right"
+            android:layout_weight="2"
+            android:padding="5dp"
+            android:text="QR : 1000999"
+            style="@style/RegularWhite15Center"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+    <View
+        android:background="@color/grey_divider"
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+</LinearLayout>

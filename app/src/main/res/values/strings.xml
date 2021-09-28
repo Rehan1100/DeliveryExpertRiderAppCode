@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">DeliveryExpert Rider</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="allreadyHaveAcc">Already have an account?</string>
+    <string name="donntHaveAcc">Don\'t have an account?</string>
+    <string name="signUpHere"><u>Sign Up here</u></string>
+    <string name="loginHere"><u>Login here</u></string>
+    <string name="sample_address">House 87,street 5A,Gori towm, airport , Rawalpindi</string>
+
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string-array name="colorArray">
+        <item>@color/assign_order_color</item>
+        <item>@color/droped_color</item>
+        <item>@color/edit_profile_color</item>
+        <item>@color/remaining_color</item>
+        <item>@color/picked_color</item>
+        <item>@color/collect_cash_color</item>
+    </string-array>
+    <string name="title_activity_maps">Map</string>
+</resources>

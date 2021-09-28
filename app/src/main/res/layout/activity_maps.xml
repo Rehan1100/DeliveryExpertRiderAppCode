@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <FrameLayout
+        android:id="@+id/framLayout_map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <fragment xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context="com.DeliverExpertRiderApp.ui.activities.MapsActivity" />
+
+
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/img_back_map"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_left_black_24dp" />
+
+    <ImageView
+        android:id="@+id/img_open_map"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:padding="5dp"
+        android:src="@drawable/map" />
+
+
+    <TextView
+        android:id="@+id/time_km"
+        style="@style/RegularBlack17Center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:padding="15dp"
+        android:text="19 min , 12.2 Km" />
+</RelativeLayout>

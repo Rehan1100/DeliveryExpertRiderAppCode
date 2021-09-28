@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_margin="5dp"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="5dp"
+    android:id="@+id/report_ad_parrent"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/report_order_no"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:text="Order No"
+                    android:padding="5dp"
+                    android:maxLines="4"
+                    android:ems="4"
+                    style="@style/RegularWhite15Center"
+                    android:textColor="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/report_address"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:text="AddressAddressAddressAddress"
+                    style="@style/RegularWhite15Center"
+                    android:textStyle="italic"
+                    android:textColor="@color/grey"
+                    android:padding="5dp"
+                    android:maxLines="4"
+                    android:ems="4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/report_order_ad_price"
+                    android:gravity="bottom|center_horizontal"
+                    android:padding="5dp"
+                    android:text="Ammount"
+                    style="@style/RegularWhite15Center"
+                    android:textColor="@color/colorAccent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_weight="15"
+            android:id="@+id/order_ad_color"
+            android:layout_width="match_parent"
+            android:background="@color/colorPrimary"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.DeliverExpertRiderApp.ui.fragments.DashboardFragment">
+
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swiper_panel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="15dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:id="@+id/linearLayout_assign_order"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:padding="5dp"
+                android:background="@color/assign_order_color"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:layout_marginTop="10dp"
+                    android:padding="15dp"
+                    android:src="@drawable/ic_assigned_order_white_24dp" />
+
+                <TextView
+                    style="@style/RegularWhite15Center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Assigned Orders" />
+
+                <TextView
+                    android:id="@+id/assign_order"
+                    style="@style/BoldWhite17Center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10dp"
+                    android:gravity="center"
+                    android:text="00" />
+            </LinearLayout>   <!-- 11 Assigned Order-->
+
+            <LinearLayout
+                android:id="@+id/linearLayout_picked"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:padding="5dp"
+                android:background="@color/picked_color"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:layout_marginTop="10dp"
+                    android:padding="15dp"
+                    android:src="@drawable/ic_picked_white_24dp" />
+
+                <TextView
+                    style="@style/RegularWhite15Center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Picked" />
+
+                <TextView
+                    android:id="@+id/picked"
+                    style="@style/BoldWhite17Center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10dp"
+                    android:gravity="center"
+                    android:text="00" />
+            </LinearLayout>   <!-- 12 Picked -->
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:id="@+id/linearLayout_dropped"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:padding="5dp"
+                android:background="@color/droped_color"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:layout_marginTop="10dp"
+                    android:padding="15dp"
+                    android:src="@drawable/ic_location_white_24dp" />
+
+                <TextView
+                    style="@style/RegularWhite15Center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Dropped" />
+
+                <TextView
+                    android:id="@+id/dropped"
+                    style="@style/BoldWhite17Center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10dp"
+                    android:gravity="center"
+                    android:text="00" />
+            </LinearLayout>   <!-- 21 Droped -->
+
+            <LinearLayout
+                android:id="@+id/linearLayout_remaining"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:background="@color/remaining_color"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:layout_marginTop="10dp"
+                    android:padding="15dp"
+                    android:src="@drawable/ic_remaining_white_24dp" />
+
+                <TextView
+                    style="@style/RegularWhite15Center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Remaining" />
+
+                <TextView
+                    android:id="@+id/remaining"
+                    style="@style/BoldWhite17Center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10dp"
+                    android:gravity="center"
+                    android:text="00" />
+            </LinearLayout>   <!-- 22 remaining -->
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:id="@+id/linearLayout_editProfile"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:layout_margin="5dp"
+                android:background="@color/edit_profile_color"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="136dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="3"
+                    android:padding="15dp"
+                    android:src="@drawable/ic_faces_white_24dp" />
+
+                <TextView
+                    style="@style/RegularWhite17Center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Reached" />
+
+                <TextView
+                    android:id="@+id/reached"
+                    style="@style/BoldWhite17Center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10dp"
+                    android:visibility="visible"
+                    android:gravity="center"
+                    android:text="00" />
+            </LinearLayout>   <!-- 32 Reached -->
+
+            <LinearLayout
+                android:id="@+id/linearLayout_collected_cash"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:padding="5dp"
+                android:layout_weight="1"
+                android:background="@color/collect_cash_color"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:layout_marginTop="10dp"
+                    android:padding="15dp"
+                    android:src="@drawable/ic_cash_white_24dp" />
+
+                <TextView
+                    style="@style/RegularWhite15Center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Cash Collected" />
+
+                <TextView
+                    android:id="@+id/collected_cash"
+                    style="@style/BoldWhite17Center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10dp"
+                    android:gravity="center"
+                    android:text="00" />
+            </LinearLayout>   <!-- 31 Cash Collect -->
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            android:id="@+id/pr"
+            layout="@layout/progress_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:visibility="visible" />
+
+    </RelativeLayout>
+</FrameLayout>

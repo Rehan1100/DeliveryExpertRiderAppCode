@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.DeliverExpertRiderApp.ui.fragments.TodayOrdersFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/swiper_todays"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/bot"
+            android:layout_below="@+id/top">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView_todays"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="5dp" />
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/bot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:padding="15dp">
+
+            <TextView
+                android:id="@+id/total_item"
+                style="@style/RegularColorAccent15Center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/total_item_price"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:paddingRight="15dp"
+                android:text="0 items Total " />
+
+            <TextView
+                android:id="@+id/total_item_price"
+                style="@style/RegularColorAccent15Center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_weight="1"
+                android:text=" QR 00" />
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            android:id="@+id/pr"
+            layout="@layout/progress_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+</FrameLayout>

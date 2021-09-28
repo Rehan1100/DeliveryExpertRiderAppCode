@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FF3D00</color>
+    <color name="colorPrimaryDark">#88C5E2</color>
+    <color name="colorAccent">#D81B60</color>
+
+
+
+
+    <color name="gr1">#68504747</color>
+    <color name="gr2">#6D817676</color>
+    <color name="gr3">#5CA39393</color>
+
+
+    <color name="sea_green_color">#50E3C2</color>
+    <color name="green_color">#0DFF48</color>
+    <color name="sea_green_color_ring">#FF50E3C2</color>
+    <color name="error_color">#E36650</color>
+    <color name="grey_user_panel_background">#F9FAFC</color>
+    <color name="grey_user_panel_text">#ABB4BE</color>
+    <color name="grey_divider">#45ABB4BE</color>
+    <color name="lightorange">#fdf2df</color>
+
+
+    <color name="colorheadert">#F44336</color>
+    <color name="colorblue">#150067</color>
+
+
+    <color name="darkpink">#d60e64</color>
+    <color name="alzarin">#34495e</color>
+    <color name="black">#000000</color>
+    <color name="window_background">#FFF5F5F5</color>
+    <color name="transparent">#00000000</color>
+    <color name="darkorange">#f59417</color>
+    <color name="orangered">#fc531c</color>
+    <color name="goldenrod">#fabf2c</color>
+    <color name="lightblue">#a0c6e8</color>
+    <color name="darkslateblue">#3b5998</color>
+    <color name="darkslategrey">#282828</color>
+    <color name="linen">#f4ece5</color>
+    <color name="white">#FFFFFF</color>
+    <color name="crimson">#db1c60</color>
+    <color name="lightgreen">#229E04</color>
+    <color name="red">#f00707</color>
+    <color name="timestamp">#4285f4</color>
+    <color name="skyblue">#0ae4f0</color>
+    <color name="icon_tint_normal">#19D3C1</color>
+    <color name="icon_tint_selected">#9C27B0</color>
+    <color name="whitesmoke">#F7F6F6</color>
+    <color name="grey">#757575</color>8
+    <color name="lightgrey">#bcbfc0</color>
+    <color name="dimgrey">#5a646a</color>
+    <color name="overlayBackground">#b5050505</color>
+    <color name="blackoverlayBackground">#7f333639</color>
+    <color name="overlayActionbar">#0e0d0e</color>
+    <color name="black_overlay">#80000000</color>
+    <color name="overlay">#00FFFFFF</color>
+    <color name="white_smoke">#FFDBDADA</color>
+
+
+    <color name="assign_order_color">#66B687</color>
+    <color name="picked_color">#3274B8</color>
+    <color name="droped_color">#045A50</color>
+    <color name="remaining_color">#FF9800</color>
+    <color name="collect_cash_color">#FF5722</color>
+    <color name="edit_profile_color">#D81B60</color>
+
+
+</resources>
